@@ -293,15 +293,15 @@ Include: _light_terminal.colortemplate
   #else
     Cursor           base03            orange
   #endif
-  CursorLineNr       base0             base02            bold
+  CursorLineNr       base03            base02            bold
   LineNr             base00            base02
   MatchParen         red               base02            bold,underline
   NonText            base00            none              bold
   SpecialKey         base00            base02            bold
-  SpellBad           magenta           none              t=underline g=undercurl s=violet
-  SpellCap           magenta           none              t=underline g=undercurl s=violet
-  SpellLocal         yellow            none              t=underline g=undercurl s=yellow
-  SpellRare          cyan              none              t=underline g=undercurl s=cyan
+  SpellBad           none              none              t=underline g=undercurl s=red
+  SpellCap           none              none              t=underline g=undercurl s=blue
+  SpellLocal         none              none              t=underline g=undercurl s=green
+  SpellRare          none              none              t=underline g=undercurl s=yellow
   Title              orange            none              bold
 #endif
 ; }}}
@@ -358,20 +358,20 @@ Variant: gui 256 16
   VertSplit          base01            base02
   WildMenu           base00            base03            reverse
 #else
-  StatusLine         base1             base02            reverse
-  StatusLineNC       base00            base02            reverse
-  TabLine            base00            base02            reverse
-  TabLineFill        base00            base02            reverse
-  TabLineSel         base1             base02            reverse
-  VertSplit          base1             base01
-  WildMenu           base2             base02            reverse
+  StatusLine         base02            base00            reverse
+  StatusLineNC       base02            base1             reverse
+  TabLine            base01            base02
+  TabLineFill        base01            base02
+  TabLineSel         base2             base02
+  VertSplit          base01            base02
+  WildMenu           base00            base03            reverse
 #endif
 ; }}}
 ; Base groups (light) {{{
 ColorColumn          none              base02
-Conceal              blue              none
+Conceal              base02            none
 CursorColumn         none              base02
-CursorLine           none              base02
+CursorLine           none              none
 Directory            blue              none
 EndOfBuffer          none              none
 ErrorMsg             red               base03            reverse
@@ -384,7 +384,7 @@ PmenuSel             base02            base00
 PmenuThumb           none              base0
 Question             cyan              none              bold
 Search               yellow            none              reverse
-SignColumn           base0             none
+SignColumn           base0             base02
 Visual               base01            base03            reverse
 VisualNOS            none              base02            reverse
 WarningMsg           orange            none              bold
